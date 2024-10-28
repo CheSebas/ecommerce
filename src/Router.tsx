@@ -9,6 +9,13 @@ import ShopItem from './ShopItem/ShopItem';
 import Cart from './Cart/Cart';
 import Checkout from './Checkout/Checkout';
 import Dashboard from './Dashboard/Dashboard';
+// -----------------------------------------
+import Products from './Dashboard/Screens/Products';
+import Orders from './Dashboard/Screens/Orders';
+import Customers from './Dashboard/Screens/Customers';
+import Reports from './Dashboard/Screens/Reports';
+// import DashboardPage from './Dashboard/Screens/Dashboard';
+
 
 
 const AppRouter: React.FC = () => {
@@ -23,6 +30,12 @@ const AppRouter: React.FC = () => {
       <Route path="/cart" element={<Cart />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      {/* ---------- */}
+      {/* <Route path="/dashboardpage" element={<DashboardPage />} /> */}
+      <Route path="/products" element={<Products />} />
+      <Route path="/orders" element={<Orders />} />
+      <Route path="/customers" element={<Customers />} />
+      <Route path="/reports" element={<Reports />} />
       {/* Añade más rutas según sea necesario */}
     </Routes>
   );

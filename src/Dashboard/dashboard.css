@@ -1,3 +1,9 @@
+.panel-size {
+  width: 100vw; /* 80% del ancho de la ventana */
+  height: 100vh; /* 80% de la altura de la ventana */
+  overflow: auto;
+}
+
 .bi {
     display: inline-block;
     width: 1rem;
